@@ -9,10 +9,12 @@
 <h1 id="title">Survey</h1>
 <p id="description">short explanation</p>
 <form id="survey-form">
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="email">Email address:</label><br>
-  <input type="text" id="email" name="email"><br>
+  <label for="name" id="name-label">Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="name" required><br>
+  <label for="email" id="email-label">Email address:</label><br>
+  <input type="email" id="email" name="email" placeholder="email" required><br>
+  <label for="number" id="number-label">Age:</label><br>
+  <input type="number" id="number" name="number" min="18" max="200" placeholder="number"><br>
   <input type="submit" value="Submit">
 </form>
 </main>
